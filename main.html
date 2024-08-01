@@ -8,54 +8,78 @@
     <style>
         body {
             background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
+           font-family: sans-serif;
         }
 
         .header {
             background-color: #011e29;
+			color: white;
             text-align: center;
-            padding: 10px 0;
-            color: white;
+            padding: 10px;
+            margin-bottom:20px;
         }
-
+    .container{
+	        display:flex;
+		justify-content: center;
+		gap: 20px;
+		padding: 0 20px;
+}
         .latest-news-section {
             background-color: #f5f5f5;
             padding: 20px;
-            width: 80%;
-            margin: 0 auto;
+            width: 30%;
+            border-radius: 5px;
         }
 
         .pictorial-news-section {
             background-color: #f5f5f5;
             padding: 20px;
-            width: 80%;
-            margin: 20px auto;
+            width: 60%;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 5px;
         }
+		.pictorial-news-section img {
+			width:100%;
+			max-width: 100%;
+			 border-radius: 5px;
+			margin-bottom:10px;
+		}
+		.latest-news-section li {
+			margin-bottom: 10px;
+		}
+		.main-article {
+			 background-color: #f5f5f5;
+            padding: 20px;
+            width: 60%;
+            text-align: center;
+            border-radius: 5px;
+		}
     </style>
 </head>
 <body>
     <header class="header">
-        <h1>News Website</h1>
+        <h1>Shaw's News</h1>
     </header>
-
+<div class="container">
     <div class="latest-news-section">
-        <h2>Latest News</h2>
+        <h2>Latest News Article</h2>
         <ul>
-            <li>News Item 1</li>
-            <li>News Item 2</li>
-            <li>News Item 3</li>
+            <li>Article 1</li>
+            <li>Article 2</li>
+            <li>Article 3</li>
         </ul>
     </div>
-
+	<div class="main-article">
+		<h2>Main Article</h2>
+		<p>Create a Basic News Webpage Layout.Create a Basic News Webpage Layout
+</p>
+	</div>
     <div class="pictorial-news-section">
-        <h3>Pictorial News</h3>
-        <img src="Image_one.jpg" alt="Image One">
-        <img src="Image_two.jpg" alt="Image Two">
-        <img src="Image_three.jpg" alt="Image Three">
+        <h1>Pictorial News</h1>
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="Image One">
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="Image Two">
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="Image Three">
     </div>
+</div>
 </body>
 </html>
